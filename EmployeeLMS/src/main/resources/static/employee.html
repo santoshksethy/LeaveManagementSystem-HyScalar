@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="employee.css">
+    
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="welcome">
+        <span id="welcomeText">Welcome</span>
+    </div>
+
+    <div class="actions">
+        <button onclick="goToApplyLeave()">Apply Leave</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="calendar-container">
+    <div class="calendar-header">
+        <button onclick="prevMonth()">Previous</button>
+        <h2 id="monthYear"></h2>
+        <button onclick="nextMonth()">Next</button>
+    </div>
+
+    <!-- Weekday names -->
+    <div class="weekdays">
+       
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+         <div>Sun</div>
+    </div>
+
+    <!-- Calendar days -->
+    <div class="calendar" id="calendar"></div>
+</div>
+
+<div id="leaveBalance" class="leave-balance-card">
+    <!-- JS will fill in remaining leaves -->
+</div>
+
+
+
+<script src="employee.js"></script>
+</body>
+</html>

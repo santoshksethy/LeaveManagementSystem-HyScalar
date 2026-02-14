@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="manager.css">
+</head>
+<body>
+
+<header>
+    <h2>Manager Dashboard</h2>
+    <div>
+        <button onclick="viewProfile()">Profile</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<h3 id="tableTitle" style="text-align:center;">Pending Leave Requests</h3>
+
+<table id="leaveTable">
+    <thead>
+        <tr>
+            <th>Employee</th>
+            <th>Type</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Reason</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<div id="buttonContainer" class="top-btn">
+    <button onclick="loadAllLeaves()">View All Leaves</button>
+</div>
+
+<script src="manager.js"></script>
+</body>
+</html>
